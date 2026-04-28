@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 質問・遊び方の相談
+    url: https://github.com/Showichiro/too-heavy-feedback/discussions/categories/q-a
+    about: 仕様に関する質問や遊び方の相談は Discussions の Q&A へ
+  - name: 雑談・感想・スコア共有
+    url: https://github.com/Showichiro/too-heavy-feedback/discussions
+    about: ゲームの感想や到達距離の自慢は Discussions へどうぞ
+  - name: アイデア・難易度の議論
+    url: https://github.com/Showichiro/too-heavy-feedback/discussions/categories/ideas
+    about: バランスや方向性についてのざっくりした提案は Ideas へ

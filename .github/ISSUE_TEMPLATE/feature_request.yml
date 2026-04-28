@@ -1,0 +1,45 @@
+name: 機能要望・改善提案
+description: 新しい要素やルール変更、UI 改善などのアイデアを送る
+title: "[Feature] "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提案ありがとうございます。**何を解決したいか** を中心に書いてもらえると採否の判断がしやすくなります。
+        既に Issue / Discussions に同じ提案がないか軽く確認してください。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 困っていること / 解決したい体験
+      description: なぜこの機能が欲しいのかを書いてください。実装案より先に「課題」を共有してもらえると嬉しいです。
+      placeholder: 例) 序盤の判断が単調で、捨てるか持つかの緊張感が薄い
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案する機能・変更
+      placeholder: 例) インベントリ枠を 1 つ減らせる代わりに移動速度が上がるアイテムを追加する
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 代替案・検討した別案
+      placeholder: 例) 序盤限定で重量上限を下げる方法も考えたが、難易度の急変が大きすぎると思った
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 影響範囲 (主観でOK)
+      options:
+        - 小さい (UI 微調整 / 文言 / 数値ひとつ)
+        - 中くらい (新アイテム / 新イベント)
+        - 大きい (新システム / コアループ変更)
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補足
+      description: 参考になる画像・他ゲームの事例・モックなどがあれば。

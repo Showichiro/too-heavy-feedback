@@ -1,0 +1,65 @@
+name: バグ報告
+description: ゲーム中に発生した不具合・想定外の挙動を報告する
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご報告ありがとうございます。再現に必要な情報をできるだけ埋めてください。
+        スクリーンショットや録画があると非常に助かります。
+  - type: textarea
+    id: summary
+    attributes:
+      label: 何が起きたか
+      description: 一言で起きた現象を書いてください。
+      placeholder: 例) インベントリからアイテムを捨てると HP が回復してしまう
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: 上から順に、誰がやっても再現できるように書いてください。
+      placeholder: |
+        1. ゲームを開始する
+        2. 水筒を 2 個持った状態で 50m 進む
+        3. 「捨てる」を押す
+        4. HP が 100 に戻る
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した挙動
+      placeholder: HP は変化しないはず
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: バージョン
+      description: 画面に表示されている版 (例 v0.3.1) があれば。なければ「不明」でOK。
+      placeholder: v0.3.1
+  - type: dropdown
+    id: device
+    attributes:
+      label: 端末
+      multiple: false
+      options:
+        - PC (デスクトップ / ノート)
+        - スマートフォン
+        - タブレット
+        - その他
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: ブラウザ
+      placeholder: 例) Chrome 130 / Safari 18 / Firefox 132
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補足
+      description: スクリーンショット・録画・コンソールエラー等があれば添付してください。
