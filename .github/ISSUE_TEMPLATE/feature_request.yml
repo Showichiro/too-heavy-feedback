@@ -1,45 +1,23 @@
 name: 機能要望・改善提案
-description: 新しい要素やルール変更、UI 改善などのアイデアを送る
+description: 「こうだったらいいな」をざっくり書く。ふわっとした内容でOK。
 title: "[Feature] "
 labels: ["enhancement", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        提案ありがとうございます。**何を解決したいか** を中心に書いてもらえると採否の判断がしやすくなります。
-        既に Issue / Discussions に同じ提案がないか軽く確認してください。
+        ふわっとした要望も歓迎です。1〜2 行でも構いません。
+        雑談・議論ベースで話したい場合は [Discussions / Ideas](https://github.com/Showichiro/too-heavy-feedback/discussions/categories/ideas) もどうぞ。
   - type: textarea
-    id: problem
+    id: idea
     attributes:
-      label: 困っていること / 解決したい体験
-      description: なぜこの機能が欲しいのかを書いてください。実装案より先に「課題」を共有してもらえると嬉しいです。
-      placeholder: 例) 序盤の判断が単調で、捨てるか持つかの緊張感が薄い
-    validations:
-      required: true
-  - type: textarea
-    id: proposal
-    attributes:
-      label: 提案する機能・変更
-      placeholder: 例) インベントリ枠を 1 つ減らせる代わりに移動速度が上がるアイテムを追加する
-    validations:
-      required: true
-  - type: textarea
-    id: alternatives
-    attributes:
-      label: 代替案・検討した別案
-      placeholder: 例) 序盤限定で重量上限を下げる方法も考えたが、難易度の急変が大きすぎると思った
-  - type: dropdown
-    id: scope
-    attributes:
-      label: 影響範囲 (主観でOK)
-      options:
-        - 小さい (UI 微調整 / 文言 / 数値ひとつ)
-        - 中くらい (新アイテム / 新イベント)
-        - 大きい (新システム / コアループ変更)
+      label: 内容
+      description: どうなってほしいか / どんなことに困っているか、思いつくまま書いてください。
+      placeholder: 例) 序盤がもう少し緊張感あると嬉しい / アイテムを並び替えたい / こういうイベントがあったら面白そう
     validations:
       required: true
   - type: textarea
     id: extra
     attributes:
-      label: 補足
-      description: 参考になる画像・他ゲームの事例・モックなどがあれば。
+      label: 補足 (任意)
+      description: 画像・参考事例・関連する状況などあれば。
