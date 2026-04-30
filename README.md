@@ -31,6 +31,10 @@
 
 建設的なやり取りをお願いします。他者への攻撃的な発言・差別的な表現・スパムは削除し、悪質な場合はブロックします。
 
+## 更新履歴
+
+本体の更新でプレイ感がどう変わったかは、[CHANGELOG.md](./CHANGELOG.md) または [Releases](https://github.com/Showichiro/too-heavy-feedback/releases) を参照してください。
+
 ## ライセンス
 
 このリポジトリ自体に同梱される文書は CC0 とします。本体プロダクトのライセンスについては [本体リポジトリ](https://github.com/Showichiro/too-heavy) を参照してください。
